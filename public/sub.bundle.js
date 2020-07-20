@@ -81,24 +81,10 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/sub.js");
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./src/app.js":
-/*!********************!*\
-  !*** ./src/app.js ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// import sub from './sub';
-// import './sub';
-
-console.log('this is a main js file.');
-
-/***/ }),
 
 /***/ "./src/sub.js":
 /*!********************!*\
@@ -108,19 +94,6 @@ console.log('this is a main js file.');
 /***/ (function(module, exports) {
 
 console.log('this is a sub js file.');
-
-/***/ }),
-
-/***/ 0:
-/*!***************************************!*\
-  !*** multi ./src/app.js ./src/sub.js ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ./src/app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! ./src/sub.js */"./src/sub.js");
-
 
 /***/ })
 

@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/app.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -90,11 +90,15 @@
 /*!********************!*\
   !*** ./src/app.js ***!
   \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sub */ "./src/sub.js");
+/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sub__WEBPACK_IMPORTED_MODULE_0__);
 // import sub from './sub';
-// import './sub';
+
 
 console.log('this is a main js file.');
 
@@ -108,19 +112,6 @@ console.log('this is a main js file.');
 /***/ (function(module, exports) {
 
 console.log('this is a sub js file.');
-
-/***/ }),
-
-/***/ 0:
-/*!***************************************!*\
-  !*** multi ./src/app.js ./src/sub.js ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ./src/app.js */"./src/app.js");
-module.exports = __webpack_require__(/*! ./src/sub.js */"./src/sub.js");
-
 
 /***/ })
 
