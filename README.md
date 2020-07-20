@@ -50,3 +50,34 @@ module.exports = {
   }
 }
 ```
+
+## Sassファイル
+
+### Loader・・・変換したりコンパイルしてくれる
+
+`yarn add --dev sass sass-loader css-loader style-loader`
+
+`
+webpack.config.js
+`
+
+```
+  output: {
+    path: path.resolve(__dirname, 'public'), // パスを変更したい場合
+    // filename: 'bundle.js' // ファイル名を変更したい場合
+    filename: '[name].bundle.js' // 変数化ファイル名を変更したい場合
+  },
+  module: {
+    rules: [
+      {
+        test: /\.scss$/, // 正規表現 $は文末
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+          // 下から実行されていく sass -> css -> style
+        ]
+      }
+    ]
+  }
+```
