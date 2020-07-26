@@ -1,7 +1,11 @@
 h1 {
   font-size: 2em;
+  transition: all .3s;
+  color: blue;
+  backface-visibility: hidden;
 
   &:hover {
+    transform: translateX(50px);
     color: red;
   }
 }

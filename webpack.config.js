@@ -22,6 +22,7 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
+          'postcss-loader',
           'sass-loader'
           // 下から実行されていく sass -> css -> style
         ]
