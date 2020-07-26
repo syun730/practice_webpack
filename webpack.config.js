@@ -26,6 +26,19 @@ module.exports = {
           'sass-loader'
           // 下から実行されていく sass -> css -> style
         ]
+      },
+      {
+        test: /\.(jpe?g|gif|png|svg|woff2?|ttf|eot)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[contenthash].[ext]', // '[name].[ext]'
+              outputPath: 'images',
+              publicPath: 'images' // http://127.0.0.1:8080/images
+            }
+          }
+        ]
       }
     ]
   }
