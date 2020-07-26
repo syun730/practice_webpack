@@ -20,6 +20,8 @@
   },
   "dependencies": {
     "autoprefixer": "^9.8.5",
-    "postcss-loader": "^3.0.0"
+    "core-js": "3",
+    "postcss-loader": "^3.0.0",
+    "regenerator-runtime": "^0.13.7"
   }
 }
